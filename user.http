@@ -1,0 +1,27 @@
+# Tạo user mới
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "name": "Phạm Nhật Bình",
+  "email": "muhahahha@gmail.com",
+  "age": 20
+}
+###
+# Lấy danh sách user
+GET http://localhost:3001/api/users
+###
+# Lấy 1 user theo id
+GET http://localhost:3001/api/users/6a6b3f6e36f9c32eb9905439
+###
+# Xóa 1 user theo id
+DELETE http://localhost:3001/api/users/6a6b3f9c36f9c32eb990543a
+###
+# Update 1 user theo id
+PUT http://localhost:3001/api/users/6a6b3f562975daa53c5c354c
+Content-Type: application/json
+
+{
+  "name": "Phạm Nhật Bình",
+  "age": 99999999999
+}
