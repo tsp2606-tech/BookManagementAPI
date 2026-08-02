@@ -1,8 +1,8 @@
 import express from 'express';
-import { create, getAll, getDetail, update, remove } from '../controllers/userController.js';
+import { create, getAll, getDetail, update, remove } from '../controllers/bookController.js';
 
 const router = express.Router();
-
+// xác định phương thức và đường dẫn
 router.post('/', create);
 router.get('/', getAll);
 router.get('/:id', getDetail);

@@ -1,0 +1,45 @@
+### Tạo tác giả mới
+POST http://localhost:3001/api/authors
+Content-Type: application/json
+
+{
+  "name": "J.K. Rowling",
+  "bio": "Tác giả của bộ truyện Harry Potter nổi tiếng",
+  "nationality": "Anh",
+  "birthYear": 1965
+}
+
+### Lấy danh sách tất cả tác giả
+GET http://localhost:3001/api/authors
+
+### Tạo sách mới
+POST http://localhost:3001/api/books/
+Content-Type: application/json
+
+{
+  "title": "Harry Potter và Chiếc Cốc Lửa",
+  "description": "Tập 4 của series Harry Potter",
+  "price": 120000,
+  "publishedYear": 2000,
+  "genre": "Fantasy",
+  "author": "6a6b4866d62ea212705c9f1e"
+}
+
+### Lấy danh sách tất cả sách
+GET http://localhost:3001/api/books
+
+### Xóa sách
+DELETE http://localhost:3001/api/books/6a6b495ed62ea212705c9f22
+
+### Kiểm tra Search của tác giả
+GET http://localhost:3001/api/books?search=Harry
+
+### Cập nhật thông tin sách
+PUT http://localhost:3001/api/books/6a6b495dd62ea212705c9f21
+Content-Type: application/json
+
+{
+  "title": "Harry Potter và Hòn Đá Phù Thủy",
+  "price": 165000
+}
+

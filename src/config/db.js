@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+// Hàm dùng để kết nối đến MongoDB
 
 const connectDB = async () => {
   try {
